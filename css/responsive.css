@@ -1,0 +1,311 @@
+/* ------------------------- Start Media Query -------------------------------------- */
+
+/* X Small Screen */
+@media(min-width: 100px) and (max-width: 991px) {
+    .container {
+        padding: 0 40px;
+    }
+
+ #testim .container {
+        padding: 0 20px;
+    }
+    footer .footer-content p {
+        max-width: 80%;
+    }
+    .blog .post {
+        margin-bottom: 30px;
+    }
+    .action {
+        height: 340px;
+    }
+    .action p {
+        max-width: 90%;
+    }
+    .portfolio .shuffle ul li {
+        padding: 0 7px;
+        font-size: 13px;
+    }
+    .journey .journey-info {
+        width: 90%;
+        margin: auto;
+    }
+    .journey .journey-title {
+        margin-top: 30px;
+    }
+
+    .skills .skills-content .row > div:not(:first-child){
+        margin-top: 3rem;
+    }
+
+    .skills .skills-info .progress {
+        margin-bottom: 38px;
+    }
+    .testim .testim-infos .myslide .image-testim {
+        line-height: 100px;
+    }
+    .testim .testim-infos .myslide .image-testim img {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .testim .testim-infos .myslide p {
+        padding: 0px 0px;
+    }
+    .about .interests .infos {
+        padding-bottom: 15px;
+    }
+    .about .interests .infos span {
+        padding: 2px;
+    }
+    .about .profile-info .element {
+        padding: 0 10px;
+    }
+    .about .profile-info .content {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .about .profile-info .title-info{
+        padding: 0;
+    }
+
+    .about .about-img {
+        height: 370px;
+        width: 300px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .about .about-img:before {
+        left: 15px;
+    }
+    .about .about-img:after {
+        right: -7px;
+    }
+    .popup .popup-cont .vl {
+        border: none;
+    }
+    .popup .popup-cont .img-popup {
+        margin-bottom: 40px;
+    }
+    .popup .popup-cont {
+        height: 330px;
+    }
+    .popup .popup-cont {
+        margin-top: 90px;
+    }
+    .home .main-btn,
+    .main-btn-hm {
+        font-size: 13px;
+        display: table;
+        margin-top: 15px;
+        padding: 11px 26px;
+        width: 150px;
+        text-align: center;
+        color: white;
+    }
+    .home .title {
+        margin-top: -140px;
+    }
+    .home .title p {
+        font-size: 14px;
+    }
+    .home .title h1 {
+        font-size: 47px;
+    }
+    .home .title .typed-cursor, .home .title .type {
+        font-size: 17px;
+    }
+    .home .bg-image {
+        background-position: 1%;
+    }
+    
+    .contact .infos-contact {
+        margin-top: 40px;
+    }
+    .contact .form {
+        padding: 0 0;
+    }
+    /* Start Navbar */
+    
+    .navbar-toggler {
+        position: relative;
+        top: 0;
+        padding: 0;
+        right: -20px;
+    }
+    .navbar-toggler:focus {
+        border: none;
+        box-shadow: none;
+    }
+    .navbar a .bg_logo {
+        height: 80px;
+        position: absolute;
+        top: 0px;
+    }
+    .navbar-toggler .menu {
+        display: block;
+    }
+    .navbar a .bg_logo {
+        background-size: 55px;
+        width: 55px;
+    }
+    
+    .navbar {
+        height: 80px;
+    }
+    .navbar .navbar-nav {
+        overflow: hidden;
+        flex-direction: column;
+        width: 0;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        background: white;
+        text-align: center;
+        transition: all .2s ease-in-out;
+        z-index: 100;
+        height: 100vh;
+    }
+    
+    .navbar .nav-item {
+        margin: 15px auto;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .navbar .nav-item a {
+        font-size: 24px;
+    }
+    
+    .navbar .nav-item:first-of-type {
+        padding-top: 20px;
+    }
+    .navbar .btn-nav {
+        padding: 20px 0;
+        width: 40%;
+        margin: auto;
+        line-height: 1px;
+        text-align: center;
+    }
+
+    .nav-item > a {
+        display: block;
+        padding: 1rem;
+        font-size: 1.6rem;
+        transition: all .4s ease-in-out;
+    }
+
+    .nav-item{
+        transform: translateX(101%);
+    }
+
+    /* start burger */
+
+    .navbar-toggler{
+        display: block;
+        position: relative;
+        padding: 0;
+        width: 45px;
+        height: 45px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .menu__show .bar{
+        width: 0;
+        background: transparent;
+    }
+
+    .bar{
+        display: block;
+        width: 45px;
+        height: 4px;
+        background: #071e48;
+        border-radius: 3px;
+        transition: all .5s ease-in-out;
+    }
+
+    .bar::before, .bar::after{
+        content: "";
+        width: 45px;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        background: #071e48;
+        border-radius: 3px;
+        transition: all .5s ease-in-out;
+    }
+
+    .bar::before{
+        transform: translateY(-12px);
+    }
+
+    .menu__show .nav-item{
+        transform: translateX(0%);
+    }
+
+    .menu__show .bar::before{
+        transform: rotate(45deg);
+    }
+
+    .bar::after{
+        transform: translateY(12px);
+    }
+
+    .menu__show .bar::after{
+        transform: rotate(-45deg);
+    }
+
+    .menu__show .navbar-nav{
+        width: 100%;
+    }
+
+    .menu__show .menu__link--first{
+        transition: all 0.5s ease-out;
+    }
+
+    .menu__show .menu__link--second{
+        transition: all 0.6s ease-out;
+    }
+
+    .menu__show .menu__link--third{
+        transition: all 0.7s ease-out;
+    }
+
+    .menu__show .menu__link--four{
+        transition: all 0.8s ease-out;
+    }
+
+    .menu__show .menu__link--fifth{
+        transition: all 0.9s ease-out;
+    }
+
+    /* end navbar */
+}
+
+/* Small Screen */
+@media(min-width: 767px) and (max-width: 991px) {
+    
+    
+}
+
+/* Medium Screen */
+@media(min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 870px;
+    }
+    .about .about-img:before {
+        left: -9px;
+    }
+    .about .about-img:after {
+        bottom: -6px;
+    }
+
+}
+
+/* Larg Screen */
+@media(min-width: 1200px) {
+    
+}
+/* ------------------------- End Media Query ---------------------------------------- */	

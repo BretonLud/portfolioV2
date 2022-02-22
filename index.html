@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        
+        <!-- meta Data -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Breton Ludovic, Développeur Web FullStack" >
+        
+        <!-- title -->
+        <title>Ludovic Breton | Portfolio</title>
+        
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="css/all.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/main.min.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        
+        <!-- Plugins -->
+        <link rel="stylesheet" href="css/lightbox.min.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        
+        <!-- google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="preload">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        
+        
+        <!-- Start Social Media -->
+        
+        <div class="social-media d-none d-md-block">
+            <a href="https://github.com/BretonLud" target="_blank"><i class="fab fa-github"></i></a> <!-- You Can Edit the link here -->
+            <a href="https://www.linkedin.com/in/ludovic-breton/" target="_blank"><i class="fab fa-linkedin-in"></i></a> <!-- You Can Edit the link here -->
+        </div>
+        
+        <!-- End Social Media -->
+        
+        <!-- Start Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <div class="container">
+                <a href="./">
+                    <h2><span>B</span>L</h2>
+                </a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item menu__link--first">
+                        <a class="" href="#home" data-value="home">
+                            <span class="name-menu">Accueil</span>
+                        </a>
+                    </li>
+                    <li class="nav-item menu__link--second">
+                        <a href="#about" data-value="about">
+                            <span class="name-menu">Présentation</span>
+                        </a>
+                    </li>
+                    <li class="nav-item menu__link--third">
+                        <a href="#skills" data-value="skills">
+                            <i class="manisa-layers" hidden></i>
+                            <span class="name-menu">Mes compétences</span>
+                        </a>
+                    </li>
+                    <li class="nav-item menu__link--four">
+                        <a href="#portfolio" data-value="portfolio" class="">
+                            <span class="name-menu">Portfolio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item menu__link--fifth">
+                        <a href="#contact" data-value="contact">
+                            <span class="name-menu">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="navbar-toggler" title="burger menu">
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        
+        <!-- Start Header -->
+        <section id="home" class="home">
+            <div class="bg-image">  <!-- you can edit the image on the main.scss file just search ( bg-image ) --></div>
+            <div class="container">
+                <div class="title">
+                    <span>Bonjour, je suis</span>
+                    <h1>Ludovic Breton</h1>
+                    <h5 class="type"></h5>  <!-- You Can Edit the title on the custom.js File -->
+                    <p>Jeune développeur à la recherche d'un contrat d'apprentissage ou d'un contrat professionnel, pour continuer à apprendre le métier de développeur. </p>
+                    <div class="btn-home">
+                        <a href="files/cv/Breton_Ludovic_dev.pdf" class="main-btn" download="Cv_Breton_Ludovic">Télécharger le CV</a>
+                        <a href="#contact" class="main-btn-hm">Contactez Moi</a>
+                    </div>
+                </div>
+                <div class="identity">
+                    <img src="./images/software.gif" alt="ma photo">
+                </div>
+            </div>
+        </section>
+        <!-- End Header -->
+        <!-- Start Popup Bar -->
+       <!-- <div class="popup">
+            <div class="container">
+                <div class="popup-cont">
+                    <div class="row">
+                        <div class="col-lg-4 col-12 vl">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="img-popup">
+                                        <img src="images/icons/experience.png" alt="experience" />
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <h6>Développeur junior</h6>
+                                    <span>Experience</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12 vl">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="img-popup">
+                                        <img src="images/icons/completed.png" alt="projects" />
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <h6>500+ Projects</h6>
+                                    <span>Completed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="img-popup">
+                                        <img src="images/icons/support.png" alt="support" />
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <h6>Support</h6>
+                                    <span>Online 24/7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- End Popup Bar -->
+        
+        <!-- Start About -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-cont">
+                    <div class="bg-image">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div class="about-img">
+                                <div class="corner"></div>
+                            </div> 
+                            <!-- go to main.scss file to edit personal image -->
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="title">
+                                <span>Mon intro</span>
+                                <h2>À propos de moi</h2>
+                            </div>
+                            <div class="infos">
+                                <p>J'ai commencé à touché un pc très jeune, depuis je n'ai pas arrêté. Ayant eu la chance de faire une reconversion professionnelle, j'ai appris via une formation le métier de développeur web et web mobile.</p>
+                            </div>
+                            <div class="profile-info">
+                                <div class="content">
+
+                                    <h5 class="title-info"> <i class="far fa-user"></i>Nom :</h5>
+                                    <p>Ludovic Breton</p> <!-- Edit Your Name  -->
+                                </div> 
+                                <div class="content">
+
+                                    <h5 class="title-info">  <i class="fa fa-phone"></i>Téléphone :</h5>
+                                    <p>06-12-09-54-17</p> <!-- Edit Your Phone  -->
+                                </div> 
+                                <div class="content">
+
+                                    <h5 class="title-info"> <i class="far fa-envelope"></i>Email :</h5>
+                                    <p>bretonludovic40@gmail.com</p> <!-- Edit Your Email  -->
+                                </div> 
+                            </div>
+                            <div class="interests">
+                                <h5>Mes intérêts</h5>
+                                <div class="infos">
+                                    <i class="fa fa-headphones-alt"></i>
+                                    <span>Musique</span>
+                                </div>
+                                <div class="infos">
+                                    <i class="fa fa-biking"></i>
+                                    <span>VTT</span>
+                                </div>
+                                <div class="infos">
+                                    <i class="fa fa-film"></i>
+                                    <span>Cinéma</span>
+                                </div>
+                                <div class="infos">
+                                    <i class="fa fa-gamepad"></i>
+                                    <span>Jeux vidéo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About -->
+        
+        <!-- Start skills -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="title">
+                    <span></span>
+                    <h2>Mes compétences</h2>
+                </div>
+                <div class="skills-content">
+                    <div class="row">
+                        <div class="col-lg-4 col-12">
+                            <div class="skills-info">
+                                <h3>Front-end</h3>
+                                <div class="mt-5 d-flex justify-content-around">
+                                    <div class="d-flex justify-content-around flex-column ">
+                                        <img src="images/icons/js.png" alt="logo js"
+                                             width="96px" height="96px">
+                                        <img class="mt-5" src="images/icons/html.png" alt="logo html5"
+                                             width="96px" height="96px">
+                                    </div>
+                                    <div class="d-flex justify-content-between flex-column">
+
+                                        <img src="images/icons/sass.png" alt="logo sass"
+                                             width="96px" height="96px">
+                                        <img src="images/icons/css3.png" alt="logo css3"
+                                             width="96px" height="96px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="skills-info">
+                                <h3>Back-end</h3>
+                                <div class="mt-5 d-flex justify-content-around">
+                                    <div class="d-flex justify-content-around flex-column ">
+                                        <img src="images/icons/php.png" alt="logo php"
+                                             width="96px" height="96px">
+                                        <img class="mt-5" src="images/icons/symfony.png" alt="logo Symfony"
+                                             width="96px" height="96px">
+                                    </div>
+                                    <div class="d-flex justify-content-between flex-column">
+                                        <img src="images/icons/mysql.png" alt="logo mysql"
+                                             width="96px" height="96px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="skills-info">
+                                <h3>Logiciels et outils</h3>
+                                <div class="mt-5 d-flex justify-content-around">
+                                    <div class="d-flex justify-content-around flex-column ">
+                                        <img src="images/icons/wordpress.png" alt="logo wordpress"
+                                             width="96px" height="96px">
+                                        <img class="mt-5" src="images/icons/git.png" alt="logo git"
+                                             width="96px" height="96px">
+                                    </div>
+                                    <div class="d-flex justify-content-between flex-column">
+
+                                        <img src="images/icons/vsc.png" alt="logo visual studio code"
+                                             width="96px" height="96px">
+                                        <img src="images/icons/phpstorm.png" alt="logo phpStorm"
+                                             width="96px" height="96px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About -->
+        
+        <!-- Start journey -->
+        <!--<section id="journey" class="journey">
+            <div class="container">
+                <div class="title">
+                    <span>MY Qualification</span>
+                    <h2>Awesome Journey</h2>
+                </div>
+                <div class="journey-content">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div class="journey-title">
+                                <i class="fas fa-graduation-cap"></i>
+                                <h4>Education</h4>
+                            </div>
+                            <div class="journey-info">
+                                <div class="journey-marker"></div>
+                                <div class="journey-infos">
+                                    <h5>Masters of Business Administration</h5>
+                                    <span class="info">Management</span>
+                                    <div class="date">
+                                        <i class="fa fa-calendar-alt"></i>
+                                        <span class="date">2011 - 2014</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="journey-info">
+                                <div class="journey-marker"></div>
+                                <div class="journey-infos">
+                                    <h5>Honours of Business Administration</h5>
+                                    <span class="info">Management</span>
+                                    <div class="date">
+                                        <i class="fa fa-calendar-alt"></i>
+                                        <span class="date">2009 - 2011</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="journey-info">
+                                <div class="journey-marker"></div>
+                                <div class="journey-infos">
+                                    <h5>Secondary School Certificate</h5>
+                                    <span class="info">Business</span>
+                                    <div class="date">
+                                        <i class="fa fa-calendar-alt"></i>
+                                        <span class="date">2005 - 2009</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="journey-title">
+                                <i class="fas fa-briefcase"></i>
+                                <h4>Experience</h4>
+                            </div>
+                            <div class="journey-info">
+                                <div class="journey-marker"></div>
+                                <div class="journey-infos">
+                                    <h5>Envato Themeforest Multi National</h5>
+                                    <span class="info">Author</span>
+                                    <div class="date">
+                                        <i class="fa fa-calendar-alt"></i>
+                                        <span class="date">2016 - 2019</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="journey-info">
+                                <div class="journey-marker"></div>
+                                <div class="journey-infos">
+                                    <h5>Global IT international Limited</h5>
+                                    <span class="info">Admin</span>
+                                    <div class="date">
+                                        <i class="fa fa-calendar-alt"></i>
+                                        <span class="date">2013 - 2016</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="journey-info">
+                                <div class="journey-marker"></div>
+                                <div class="journey-infos">
+                                    <h5>Instructory Global</h5>
+                                    <span class="info">Head of Business Development</span>
+                                    <div class="date">
+                                        <i class="fa fa-calendar-alt"></i>
+                                        <span class="date">2011 - 2013</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        
+        <!-- End Journey -->
+        
+        <!-- Start Portfolio  -->
+        <section id="portfolio" class="portfolio text-center">
+            <div class="container">
+                <div class="title">
+                    <span>Mon portfolio</span>
+                    <h2>Projet récent</h2>
+                </div>
+                <!--<div class="shuffle">
+                    <ul class="list-unstyled">
+                        <li data-class="all" class="active item">All Projects</li>
+                        <li data-class=".web" class="item">Web Design</li>
+                        <li data-class=".mobile" class="item">Mobile App</li>
+                        <li data-class=".graphic" class="item">Graphic Design</li>
+                    </ul>
+                </div>-->
+                <div class="gallery">
+                    <div class="row">
+                        <!-- Start Image Number 1 -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="item mobile">
+                                <div class="over">
+                                    <div class="info-img">
+                                        <div class="center-infos">
+                                            <div class="icon-gallery">
+                                                <a href="images/portfolio/portfolio.webp" data-lightbox="image-1" data-title="Premier portfolio">
+                                                        <!-- ^ And Here -->
+                                                    <i class="fas fa-expand-alt"></i>
+                                                </a>
+                                                <a class="openModal" data-id="portfolio_v1"><i class="fas fa-link" ></i></a>
+                                                <a href="https://github.com/BretonLud/portfolio" target="_blank"><i class="fab fa-github"></i></a>
+                                            </div>
+                                            <span>Portfolio V1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/portfolio/portfolio.webp" alt="portfolio v1" class="img-fluid">
+                                        <!-- Here ^ You Can Change image And Up -->
+                            </div>
+                            <div class="modal" data-id="portfolio_v1">
+                                <div class="modal-content modal__portfolio">
+                                    <div class="modal-header justify-content-center">
+                                        <h2>Portfolio V1</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="d-flex align-items-center">
+                                            <img src="images/portfolio/portfolio.webp"
+                                                 alt="portfolio_v1">
+                                        </div>
+                                        <div>
+                                            <p>
+                                                Lors de ma formation j'ai dû faire un portofolio, celui-ci a été fait sans template.
+                                                Grâce au portfolio j'ai appris les bases du html, css et js.
+                                            </p>
+                                            <h5>Github :</h5>
+                                            <p>
+                                                Vous trouverez le portfolio sur github en cliquant <a href="https://github.com/BretonLud/portfolio"
+                                                                                                      target="_blank">ici</a>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <img class="closeModal" src="images/icons/close.png"
+                                             alt="bouton close modal">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Image Number 1 -->
+                        <!-- ===================== -->
+                        <!-- Start Image Number 2 -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="item graphic">
+                                <div class="over">
+                                    <div class="info-img">
+                                        <div class="center-infos">
+                                            <div class="icon-gallery">
+                                                <a href="images/portfolio/fricoot.webp" data-lightbox="image-1" data-title="Copie Kahoot">
+                                                        <!-- ^ And Here -->
+                                                    <i class="fas fa-expand-alt"></i>
+                                                </a>
+                                                <a href="https://github.com/BretonLud/Fricoot" target="_blank"><i class="fab fa-github"></i></a>
+                                            </div>
+                                            <span>Kahoot</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/portfolio/fricoot.webp" alt="Kahoot" class="img-fluid">
+                                        <!-- Here ^ You Can Change image And Up -->
+                            </div>
+                        </div>
+                        <!-- End Image Number 2 -->
+                        <!-- ===================== -->
+                        <!-- Start Image Number 3 -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="item web">
+                                <div class="over">
+                                    <div class="info-img">
+                                        <div class="center-infos">
+                                            <div class="icon-gallery">
+                                                <a href="images/portfolio/foodbus.JPG" data-lightbox="image-1" data-title="Foodtruck DAQ">
+                                                        <!-- ^ And Here -->
+                                                    <i class="fas fa-expand-alt"></i>
+                                                </a>
+                                                <a href="https://github.com/BretonLud/foodtruck" target="_blank"><i class="fab fa-github"></i></a>
+                                            </div>
+                                            <span>Projet foodtruck</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/portfolio/foodbus.JPG" alt="Foodtruck" class="img-fluid">
+                                        <!-- Here ^ You Can Change image And Up -->
+                            </div>
+                        </div>
+                        <!-- End Image Number 3 -->
+                        <!-- ===================== -->
+                        <!-- Start Image Number 4 -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="item mobile">
+                                <div class="over">
+                                    <div class="info-img">
+                                        <div class="center-infos">
+                                            <div class="icon-gallery">
+                                                <a href="images/portfolio/recap.webp" data-lightbox="image-1"
+                                                   data-title="PWA Recap">
+                                                        <!-- ^ And Here -->
+                                                    <i class="fas fa-expand-alt"></i>
+                                                </a>
+                                                <a class="openModal" data-id="modalRecap"><i class="fas fa-link" ></i></a>
+                                            </div>
+                                            <span>Application mobile Recap</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/portfolio/recap.webp" alt="Pwa Recap" class="img-fluid">
+                                <!-- Here ^ You Can Change image And Up -->
+                            </div>
+                            <div class="modal" data-id="modalRecap">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2>Pwa Recap</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/portfolio/recap_alert.webp"
+                                             alt="Alerté Recap PWA">
+                                        <p>
+                                            Lors de ma formation, j'ai fais un stage à la mission locale de Montbéliard.
+                                            Durant le stage j'avais pour objectif de faire un prototype de pwa.
+                                            J'ai utilisé le framework Symfony pour faire mon back-end et du HTML, CSS et js pour le front
+                                        </p>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <img class="closeModal" src="images/icons/close.png"
+                                             alt="bouton close modal">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Image Number 4 -->
+                        <!-- ===================== -->
+                        <!-- Start Image Number 5 -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="item web">
+                                <div class="over">
+                                    <div class="info-img">
+                                        <div class="center-infos">
+                                            <div class="icon-gallery">
+                                                <a href="images/portfolio/recap.webp" data-lightbox="image-1" data-title="Project Title">
+                                                        <!-- ^ And Here -->
+                                                    <i class="fas fa-expand-alt"></i>
+                                                </a>
+                                                <a><i class="far fa-heart"></i></a>
+                                            </div>
+                                            <span>Web Design</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/portfolio/05.jpg" alt="imgPort1" class="img-fluid">
+                                        <!-- Here ^ You Can Change image And Up -->
+                            </div>
+                        </div>
+                        <!-- End Image Number 5 -->
+                        <!-- ===================== -->
+                        <!-- Start Image Number 6 -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="item graphic">
+                                <div class="over">
+                                    <div class="info-img">
+                                        <div class="center-infos">
+                                            <div class="icon-gallery">
+                                                <a href="images/portfolio/06.jpg" data-lightbox="image-1" data-title="Project Title">
+                                                        <!-- ^ And Here -->
+                                                    <i class="fas fa-expand-alt"></i>
+                                                </a>
+                                                <a><i class="far fa-heart"></i></a>
+                                            </div>
+                                            <span>Graphic Design</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/portfolio/06.jpg" alt="imgPort1" class="img-fluid">
+                                        <!-- Here ^ You Can Change image And Up -->
+                            </div>
+                        </div>
+                        <!-- End Image Number 6 -->
+                        <!-- ===================== -->
+                        <!-- Start Image Number 7 -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="item mobile less">
+                                <div class="over">
+                                    <div class="info-img">
+                                        <div class="center-infos">
+                                            <div class="icon-gallery">
+                                                <a href="images/portfolio/07.jpg" data-lightbox="image-1" data-title="Project Title">
+                                                        <!-- ^ And Here -->
+                                                    <i class="fas fa-expand-alt"></i>
+                                                </a>
+                                                <a><i class="far fa-heart"></i></a>
+                                            </div>
+                                            <span>Mobile App</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/portfolio/07.jpg" alt="imgPort1" class="img-fluid">
+                                        <!-- Here ^ You Can Change image And Up -->
+                            </div>
+                        </div>
+                        <!-- End Image Number 7 -->
+                        <!-- ===================== -->
+                        <!-- Start Image Number 8 -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="item graphic less">
+                                <div class="over">
+                                    <div class="info-img">
+                                        <div class="center-infos">
+                                            <div class="icon-gallery">
+                                                <a href="images/portfolio/08.jpg" data-lightbox="image-1" data-title="Project Title">
+                                                        <!-- ^ And Here -->
+                                                    <i class="fas fa-expand-alt"></i>
+                                                </a>
+                                                <a><i class="far fa-heart"></i></a>
+                                            </div>
+                                            <span>Graphic Design</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/portfolio/08.jpg" alt="imgPort1" class="img-fluid">
+                                        <!-- Here ^ You Can Change image And Up -->
+                            </div>
+                        </div>
+                        <!-- End Image Number 8 -->
+                        <!-- ===================== -->
+                        <!-- Start Image Number 9 -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="item web less">
+                                <div class="over">
+                                    <div class="info-img">
+                                        <div class="center-infos">
+                                            <div class="icon-gallery">
+                                                <a href="images/portfolio/09.jpg" data-lightbox="image-1" data-title="Project Title">
+                                                        <!-- ^ And Here -->
+                                                    <i class="fas fa-expand-alt"></i>
+                                                </a>
+                                                <a><i class="far fa-heart"></i></a>
+                                            </div>
+                                            <span>Web Design</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/portfolio/09.jpg" alt="imgPort1" class="img-fluid">
+                                        <!-- Here ^ You Can Change image And Up -->
+                            </div>
+                        </div>
+                        <!-- End Image Number 9 -->
+                    </div>
+                    <a class="show-more main-btn">Show More</a>
+                    <a class="show-less main-btn">Show Less</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- End Portfolio -->
+        
+        <!-- Start Testim -->
+        
+       <!-- <section id="testim" class="testim">
+            <div class="container col-12">
+                <div class="title">
+                    <span>Testimonial</span>
+                    <h2>My Client Saying</h2>
+                </div>
+                <div class="testim-infos">
+                    <div class="testim-slider"> -->
+                        <!-- Start Slider Number 1 -->
+                      <!--  <div class="slide1 myslide">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="image-testim">
+                                        <img src="images/testim/client1.png" alt="image client"/> -->  <!-- Here You can Add The Client Image -->
+                                  <!--  </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="client-testim">
+                                        <h5 class="name">Raul K. Smith</h5>
+                                        <span class="info">Client</span>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="rate">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Improve him believe opinion offered met and end cheered forbade. Friendly as stronger speedily by recurred. Son interest wandered sir addition end say. Manners beloved.</p>
+                        </div> -->
+                        <!-- End Slider Number 1 -->
+                        <!-- ===================== -->
+                        <!-- Start Slider Number 2 -->
+                        <!--<div class="slide1 myslide">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="image-testim">
+                                        <img src="images/testim/client2.jpg" alt="image client"/> --> <!-- Here You can Add The Client Image -->
+                       <!--             </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="client-testim">
+                                        <h5 class="name">Asib Uz Zaman</h5>
+                                        <span class="info">Client</span>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="rate">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Improve him believe opinion offered met and end cheered forbade. Friendly as stronger speedily by recurred. Son interest wandered sir addition end say. Manners beloved.</p>
+                        </div> -->
+                        <!-- End Slider Number 2 -->
+                        <!-- ===================== -->
+                        <!-- Start Slider Number 3 -->
+                     <!--   <div class="slide1 myslide">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="image-testim">
+                                        <img src="images/testim/client3.jpg" alt="image client"/> --> <!-- Here You can Add The Client Image -->
+                            <!--        </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="client-testim">
+                                        <h5 class="name">Raul K. Smith</h5>
+                                        <span class="info">Client</span>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="rate">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Improve him believe opinion offered met and end cheered forbade. Friendly as stronger speedily by recurred. Son interest wandered sir addition end say. Manners beloved.</p>
+                        </div> -->
+                        <!-- End Slider Number 3 -->
+                        <!-- ===================== -->
+                        <!-- Start Slider Number 4 -->
+                  <!--      <div class="slide1 myslide">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="image-testim">
+                                        <img src="images/testim/client4.jpg" alt="image client"/> --> <!-- Here You can Add The Client Image -->
+                            <!--        </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="client-testim">
+                                        <h5 class="name">Asib Uz Zaman</h5>
+                                        <span class="info">Client</span>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="rate">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Improve him believe opinion offered met and end cheered forbade. Friendly as stronger speedily by recurred. Son interest wandered sir addition end say. Manners beloved.</p>
+                        </div> -->
+                        <!-- End Slider Number 4 -->
+                        <!-- ===================== -->
+                        <!-- Start Slider Number 5 -->
+                  <!--      <div class="slide1 myslide">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="image-testim">
+                                        <img src="images/testim/client5.jpg" alt="image client"/> --> <!-- Here You can Add The Client Image -->
+                                  <!--  </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="client-testim">
+                                        <h5 class="name">Raul K. Smith</h5>
+                                        <span class="info">Client</span>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="rate">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Improve him believe opinion offered met and end cheered forbade. Friendly as stronger speedily by recurred. Son interest wandered sir addition end say. Manners beloved.</p>
+                        </div> -->
+                        <!-- End Slider Number 5 -->
+                        <!-- ===================== -->
+                        <!-- Start Slider Number 6 -->
+                   <!--     <div class="slide1 myslide">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="image-testim">
+                                        <img src="images/testim/client6.jpg" alt="image client"/> -->  <!-- Here You can Add The Client Image -->
+                                <!--    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="client-testim">
+                                        <h5 class="name">Asib Uz Zaman</h5>
+                                        <span class="info">Client</span>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="rate">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Improve him believe opinion offered met and end cheered forbade. Friendly as stronger speedily by recurred. Son interest wandered sir addition end say. Manners beloved.</p>
+                        </div> -->
+                        <!-- End Slider Number 6 -->
+                  <!--  </div>
+                </div>
+            </div>
+        </section> -->
+        
+        <!-- End Testim -->
+        
+        
+        <!-- Start Blog -->
+        <!-- <section id="blog" class="blog">
+           <div class="container">
+                <div class="title">
+                    <span>Blog</span>
+                    <h2>Latest Updates</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <div class="post">
+                            <div class="img-post">
+                                <img src="images/blog/01.jpg" class="img-fluid" alt="img-post" />
+                            </div>
+                            <div class="infos-post">
+                                <span class="text-uppercase">01 jan 2020</span>
+                                <h4>Forfeited you engrossed butgay some</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="post">
+                            <div class="img-post">
+                                <img src="images/blog/02.jpg" class="img-fluid" alt="img-post" />
+                            </div>
+                            <div class="infos-post">
+                                <span class="text-uppercase">01 jan 2020</span>
+                                <h4>Barton did feebly change man she afford </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="post">
+                            <div class="img-post">
+                                <img src="images/blog/03.jpg" class="img-fluid" alt="img-post" />
+                            </div>
+                            <div class="infos-post">
+                                <span class="text-uppercase">01 jan 2020</span>
+                                <h4>Am if number no up period regard sudden better</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        
+        <!-- End Blog -->
+        
+        
+        <!-- Start Contact -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="title">
+                    <span>Me contacter</span>
+                    <h2>Comment me contacter</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-12">
+                        <div class="form">
+                            <form id="my_form" method="post">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <input id="name" class="form-control" type="text" name="name" placeholder="Nom" required/>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <input id="email" class="form-control" type="email" name="email" placeholder="Email" required/>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input id="subject" class="form-control" type="text" name="subject" placeholder="objet"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message">
+                                    <div class="form-group">
+                                        <textarea id="msg" class="form-control" placeholder="Message" required></textarea>
+                                    </div>
+                                    <p>
+                                        <span class="send-btn">
+                                            <input id="btn" class="btn main-btn" type="submit" value="Envoyer le message" />
+                                        </span>
+                                        <span id="status"></span>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="infos-contact">
+                            <div class="infos">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="icon-contact">
+                                            <i class="fas fa-phone-alt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <h6>M'appeler</h6>
+                                        <a href="tel:+201-354-4443">06-12-09-54-17</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="infos">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="icon-contact">
+                                            <i class="far fa-envelope"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <h6>E-mail</h6>
+                                        <a href="mailto:bretonludovic40@gmail.com">bretonludovic40@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="infos">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="icon-contact">
+                                            <i class="fas fa-map-pin"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <h6>Adresse</h6>
+                                        <span>8B rue du 8 mai 1945, 70290 Plancher-Bas</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- End Contact -->
+        
+        <!-- Start Footer -->
+        
+        <footer class="text-center">
+            <div class="footer-content">
+                <a href="#home">
+                    <h2><span>B</span>L</h2>
+                </a>
+                <div class="social-media-footer">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="copyright">
+                    <p>Tous droits réservés</p>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- End Footer -->
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/all.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/typed.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/menu.js"></script>
+            <script src="js/modal.js" ></script>
+    </body>
+</html>

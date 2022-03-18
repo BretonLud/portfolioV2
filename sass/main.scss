@@ -68,6 +68,7 @@ a {
 }
 
 
+
 body {
     font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;;
@@ -412,7 +413,7 @@ p {
             height: 60px;
             position: absolute;
             top: -8px;
-            left: 155px;
+            left: 180px;
             border-top: 2px solid $main-color;
             border-left: 2px solid $main-color;
         }
@@ -807,7 +808,7 @@ p {
     .modal-content{
         box-sizing: border-box;
         width: 70%;
-        height: 70%;
+        min-height: 70%;
         flex: 0 1 auto;
         opacity: 100;
         background: white;
@@ -816,11 +817,8 @@ p {
             display: flex;
             justify-content: space-around;
             text-align: left !important;
-            p{
-                width: 60%;
-            }
             img{
-                width: 10%;
+                width: 30%;
                 transition: transform 0.5s ease-in-out
             }
             img:hover{
@@ -1035,6 +1033,18 @@ p {
         background-position: center;
         width: 100%;
         height: 100%;
+    .alert-success{
+        background-color: #65ca9c ;
+        color: white;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    .alert-danger{
+        background-color: #d54c4c ;
+        color: white;
+        padding: 1rem;
+        border-radius: 10px;
+    }
     .form {
         padding: 0 30px;
         .thanks {
@@ -1083,10 +1093,13 @@ p {
             color: #fff;
             border-radius: 50%;
             margin-left: auto;
+            position: relative;
             svg {
                 font-size: 20px;
                 margin: auto;
                 display: table-cell;
+                position: absolute;
+                left: 15px;
                 @include transform( translate(0, 70%) );
             }
         }

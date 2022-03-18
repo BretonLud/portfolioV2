@@ -21,6 +21,9 @@
     .action p {
         max-width: 90%;
     }
+    .portfolio{
+        padding-top: 45px;
+    }
     .portfolio .shuffle ul li {
         padding: 0 7px;
         font-size: 13px;
@@ -31,6 +34,10 @@
     }
     .journey .journey-title {
         margin-top: 30px;
+    }
+
+    .skills{
+        padding-bottom: 45px;
     }
 
     .skills .skills-content .row > div:not(:first-child){
@@ -51,6 +58,11 @@
     .testim .testim-infos .myslide p {
         padding: 0px 0px;
     }
+
+    .about{
+        padding-top: 45px;
+    }
+
     .about .interests .infos {
         padding-bottom: 15px;
     }
@@ -70,6 +82,7 @@
     }
 
     .about .about-img {
+        display: none;
         height: 370px;
         width: 300px;
         margin: auto;
@@ -92,6 +105,9 @@
     }
     .popup .popup-cont {
         margin-top: 90px;
+    }
+    .home{
+        padding-bottom: 45px;
     }
     .home .main-btn,
     .main-btn-hm {
@@ -121,6 +137,9 @@
     
     .contact .infos-contact {
         margin-top: 40px;
+    }
+    .contact .form .row > .col-6{
+        width: 100%;
     }
     .contact .form {
         padding: 0 0;
@@ -279,6 +298,29 @@
 
     .menu__show .menu__link--fifth{
         transition: all 0.9s ease-out;
+    }
+    .icon-gallery{
+        visibility: hidden;
+    }
+    .over{
+        display: none;
+    }
+    .modal .modal-content{
+        width: 90%;
+        height: auto;
+        top: 0;
+        min-height: 100%;
+        position: absolute;
+    }
+    .modal .modal-content .modal-body{
+        flex-direction: column;
+    }
+    .modal .modal-content .modal-body div{
+        margin-bottom: 1rem;
+        width: auto;
+    }
+    .modal .modal-content .modal-body img{
+        width: 60%;
     }
 
     /* end navbar */

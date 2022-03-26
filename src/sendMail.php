@@ -35,8 +35,9 @@ if ($_GET['ajax']){
             $message = wordwrap($message, 100, "\r\n");
 
             $mail->isSMTP();
+
             $mail->Host = 'localhost';
-            $mail->Port = 1025;
+            $mail->Port = 25;
 
             $mail->CharSet = "utf-8";
 
@@ -53,7 +54,7 @@ if ($_GET['ajax']){
             if($mail->send()) {
                 $tab = ['Response' => 'success', 'Message' => 'Votre mail a été envoyé'];
             } else {
-                $tab = ['Response' => 'error', 'Message' => 'Le mail n\'a pas été envoyé'];
+                $tab = ['Response' => 'error', 'Message' => 'Le mail n\'a pas été envoyé'. $mail->ErrorInfo];
             }
 
 

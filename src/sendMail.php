@@ -18,7 +18,7 @@ if ($_GET['ajax']){
 
         if (preg_match('/<\/?(.|\s|\S)*?>/', $objet) == false && preg_match('/<\/?(.|\s|\S)*?>/', $message) == false
             && preg_match('/<\/?(.|\s|\S)*?>/', $name) == false) {
-            $to = "Bretonludovic40@gmail.com"; // Change this email to your //
+            $to = "bretonludovic40@gmail.com"; // Change this email to your //
             $subject = "$objet:  $name";
             $body = "You have received a new message from your website contact form.\n\n" . "Here are the details:\n\nName: $name\n\n\nEmail: $email\n\nSubject: $objet\n\nMessage: $message";
             $header = "From: portfolio.bretonludovic@hotmail.fr". "\r\n" .

@@ -734,13 +734,18 @@ p {
   position: relative;
   margin-bottom: 20px;
   overflow: hidden;
-  max-height: 200px;
+  height: 200px;
   -webkit-transition: all 320ms ease-in-out;
   -moz-transition: all 320ms ease-in-out;
   -ms-transition: all 320ms ease-in-out;
   -o-transition: all 320ms ease-in-out;
   transition: all 320ms ease-in-out;
   border-radius: 9px;
+}
+@media screen and (max-width: 1399.98px) {
+  .portfolio .gallery .item {
+    height: 150px;
+  }
 }
 .portfolio .gallery .item .over {
   position: absolute;

@@ -388,7 +388,7 @@ p {
         margin-bottom: 0;
     }
     .about-img {
-        background-image: url(../images/identity.png);
+        background-image: url(../images/identity.webp);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right;
@@ -476,7 +476,7 @@ p {
             &:before {
                 content: "";
                 display: block;
-                background-image: url(../images/about-me-bg-1.png);
+                background-image: url(../images/about-me-bg-1.webp);
                 background-size: cover;
                 background-repeat: no-repeat;
                 width: 550px;

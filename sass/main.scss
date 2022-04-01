@@ -283,14 +283,14 @@ p {
 .home {
     .bg-image {
         @media screen and (max-width: 991px){
-            background-image: url("../images/identity.png");
+            background-image: url("../images/identity.webp");
         }
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         background-color: #f1f4fb;
         width: 100%;
-        height: calc(100vh - 90px);
+        height: 100vh;
     }
 
     .title {
@@ -420,6 +420,12 @@ p {
             left: 180px;
             border-top: 2px solid $main-color;
             border-left: 2px solid $main-color;
+            @media screen and(min-width: 1200px){
+                left: 120px;
+            }
+            @media screen and(max-width: 1400px){
+                left: 120px;
+            }
         }
     }
     .infos {

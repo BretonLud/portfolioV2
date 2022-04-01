@@ -33,10 +33,49 @@ function toggleMenu(){
 
 toggleMenu();
 
-const options = {
-    routeMargin: "0px 0px",
-    threshold : 0.8,
+let options
+
+
+if (window.innerWidth < 960){
+    options = {
+        routeMargin: "0px 0px",
+        threshold : 0.45,
+    }
+    window.addEventListener('resize', ()=> {
+      if  (window.innerWidth > 960){
+          options = {
+              routeMargin: "0px 0px",
+              threshold : 0.8,
+          }
+      } else {
+          options = {
+              routeMargin: "0px 0px",
+              threshold : 0.45,
+          }
+      }
+    })
+} else {
+    options = {
+        routeMargin: "0px 0px",
+        threshold : 0.8,
+    }
+
+    window.addEventListener('resize', ()=> {
+        if (window.innerWidth < 960) {
+            options = {
+                routeMargin: "0px 0px",
+                threshold: 0.45,
+            }
+        } else {
+            options = {
+                routeMargin: "0px 0px",
+                threshold: 0.8,
+            }
+        }
+    })
 }
+
+
 
 const observer = new IntersectionObserver(handleIntersec, options);
 const sections = document.querySelectorAll("section");
@@ -45,6 +84,8 @@ const listes = document.querySelectorAll(".nav-item");
 sections.forEach(section => {
     observer.observe(section)
 })
+
+
 
 function handleIntersec(entries){
     entries.forEach(entry => {

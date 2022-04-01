@@ -451,7 +451,7 @@ p {
   display: inline-block;
   margin-right: 25px;
 }
-.about .interests .infos svg {
+.about .interests .infos i {
   color: #43a7ff;
 }
 .about .interests .infos span {
@@ -471,13 +471,13 @@ p {
   justify-content: space-between;
   width: 60%;
 }
-.about .profile-info svg {
-  color: #43a7ff;
-  margin-right: 0.5rem;
-}
 .about .profile-info .title-info {
   font-weight: 600;
   padding-left: 10px;
+}
+.about .profile-info .title-info i {
+  margin-right: 0.5rem;
+  color: #43a7ff;
 }
 .about .profile-info .element {
   padding: 0 70px;
@@ -1125,7 +1125,7 @@ p {
   margin-left: auto;
   position: relative;
 }
-.contact .infos-contact .icon-contact svg {
+.contact .infos-contact .icon-contact i {
   font-size: 20px;
   margin: auto;
   display: table-cell;

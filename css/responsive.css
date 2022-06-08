@@ -124,6 +124,8 @@
     }
     .home .title p {
         font-size: 14px;
+        font-weight: bold;
+        color: #43a7ff;
     }
     .home .title h1 {
         font-size: 47px;
@@ -341,7 +343,11 @@
         left: -9px;
     }
     .about .about-img:after {
-        bottom: -6px;
+        bottom: 18px;
+    }
+
+    .about .profile-info .content{
+        width: 80%;
     }
 
 }

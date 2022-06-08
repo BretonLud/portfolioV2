@@ -67,7 +67,15 @@ a {
     cursor: pointer !important;
 }
 
-
+.about,.skills, .portfolio, .contact{
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    @media screen and (max-width:999px ){
+        height: auto;
+    }
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -290,7 +298,7 @@ p {
         background-position: center;
         background-color: #f1f4fb;
         width: 100%;
-        height: 100vh;
+        height: calc(100vh - 48px);;
     }
 
     .title {
@@ -423,8 +431,8 @@ p {
             @media screen and(min-width: 1200px){
                 left: 120px;
             }
-            @media screen and(max-width: 1400px){
-                left: 120px;
+            @media screen and(min-width: 1400px){
+                left: 190px;
             }
         }
     }
@@ -1048,7 +1056,6 @@ p {
         background-repeat: no-repeat;
         background-position: center;
         width: 100%;
-        height: 100%;
     .alert-success{
         background-color: #65ca9c ;
         color: white;

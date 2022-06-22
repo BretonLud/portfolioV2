@@ -290,6 +290,7 @@ p {
 ===========================================================*/
 
 .home {
+    background-color: #f1f4fb;
     .bg-image {
         @media screen and (max-width: 991px){
             background-image: url("../images/identity.webp");
@@ -297,7 +298,6 @@ p {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        background-color: #f1f4fb;
         width: 100%;
         height: calc(100vh - 48px);;
     }

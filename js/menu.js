@@ -1,4 +1,6 @@
-const links = document.querySelectorAll('.nav-item')
+const links = document.querySelectorAll('.nav-item');
+const navbar = document.querySelector('.navbar');
+const logo = document.querySelector('.container h2');
 
 function toggleMenu(){
     const menu = document.querySelector('.navbar');
@@ -41,6 +43,15 @@ if (window.innerWidth < 960){
         routeMargin: "0px 0px",
         threshold : 0.45,
     }
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 90){
+            navbar.style.backgroundColor = 'rgba(0,0,0,0)';
+            logo.style.display = 'none';
+        } else  {
+            navbar.style.backgroundColor = '#fff';
+            logo.style.display = 'block';
+        }
+    })
     window.addEventListener('resize', ()=> {
       if  (window.innerWidth > 960){
           options = {
@@ -52,6 +63,15 @@ if (window.innerWidth < 960){
               routeMargin: "0px 0px",
               threshold : 0.45,
           }
+          window.addEventListener('scroll', () => {
+              if (window.scrollY >= 90){
+                  navbar.style.backgroundColor = 'rgba(0,0,0,0)';
+                  logo.style.display = 'none';
+              } else  {
+                  navbar.style.backgroundColor = '#fff';
+                  logo.style.display = 'block';
+              }
+          })
       }
     })
 } else {
@@ -66,6 +86,17 @@ if (window.innerWidth < 960){
                 routeMargin: "0px 0px",
                 threshold: 0.45,
             }
+            console.log(window.scrollY)
+            window.addEventListener('scroll', () => {
+                if (window.scrollY >= 90){
+                    navbar.style.backgroundColor = 'rgba(0,0,0,0)';
+                    logo.style.display = 'none';
+                    console.log(window.scrollY)
+                } else  {
+                    navbar.style.backgroundColor = '#fff'
+                    logo.style.display = 'block';
+                }
+            })
         } else {
             options = {
                 routeMargin: "0px 0px",
@@ -103,3 +134,4 @@ function handleIntersec(entries){
         }
     })
 }
+

@@ -37,19 +37,19 @@ toggleMenu();
 
 let options
 
+window.addEventListener('scroll', () => {
+    if (window.scrollY >= 180){
+        navbar.style.backgroundColor = '#fff';
+    } else  {
+        navbar.style.backgroundColor = 'rgba(0,0,0,0)';
+    }
+})
 
 if (window.innerWidth < 960){
     options = {
         routeMargin: "0px 0px",
         threshold : 0.45,
     }
-    window.addEventListener('scroll', () => {
-        if (window.scrollY >= 180){
-            navbar.style.backgroundColor = '#fff';
-        } else  {
-            navbar.style.backgroundColor = 'rgba(0,0,0,0)';
-        }
-    })
     window.addEventListener('resize', ()=> {
       if  (window.innerWidth > 960){
           options = {
@@ -61,13 +61,6 @@ if (window.innerWidth < 960){
               routeMargin: "0px 0px",
               threshold : 0.45,
           }
-          window.addEventListener('scroll', () => {
-              if (window.scrollY >= 180){
-                  navbar.style.backgroundColor = '#fff';
-              } else  {
-                  navbar.style.backgroundColor = 'rgba(0,0,0,0)';
-              }
-          })
       }
     })
 } else {
@@ -81,13 +74,6 @@ if (window.innerWidth < 960){
                 routeMargin: "0px 0px",
                 threshold: 0.45,
             }
-            window.addEventListener('scroll', () => {
-                if (window.scrollY >= 180){
-                    navbar.style.backgroundColor = '#fff';
-                } else  {
-                    navbar.style.backgroundColor = 'rgba(0,0,0,0)';
-                }
-            })
         } else {
             options = {
                 routeMargin: "0px 0px",

@@ -44,12 +44,10 @@ if (window.innerWidth < 960){
         threshold : 0.45,
     }
     window.addEventListener('scroll', () => {
-        if (window.scrollY >= 90){
-            navbar.style.backgroundColor = 'rgba(0,0,0,0)';
-            logo.style.display = 'none';
-        } else  {
+        if (window.scrollY >= 180){
             navbar.style.backgroundColor = '#fff';
-            logo.style.display = 'block';
+        } else  {
+            navbar.style.backgroundColor = 'rgba(0,0,0,0)';
         }
     })
     window.addEventListener('resize', ()=> {
@@ -64,12 +62,10 @@ if (window.innerWidth < 960){
               threshold : 0.45,
           }
           window.addEventListener('scroll', () => {
-              if (window.scrollY >= 90){
-                  navbar.style.backgroundColor = 'rgba(0,0,0,0)';
-                  logo.style.display = 'none';
-              } else  {
+              if (window.scrollY >= 180){
                   navbar.style.backgroundColor = '#fff';
-                  logo.style.display = 'block';
+              } else  {
+                  navbar.style.backgroundColor = 'rgba(0,0,0,0)';
               }
           })
       }
@@ -86,15 +82,11 @@ if (window.innerWidth < 960){
                 routeMargin: "0px 0px",
                 threshold: 0.45,
             }
-            console.log(window.scrollY)
             window.addEventListener('scroll', () => {
-                if (window.scrollY >= 90){
-                    navbar.style.backgroundColor = 'rgba(0,0,0,0)';
-                    logo.style.display = 'none';
-                    console.log(window.scrollY)
+                if (window.scrollY >= 180){
+                    navbar.style.backgroundColor = '#fff';
                 } else  {
-                    navbar.style.backgroundColor = '#fff'
-                    logo.style.display = 'block';
+                    navbar.style.backgroundColor = 'rgba(0,0,0,0)';
                 }
             })
         } else {

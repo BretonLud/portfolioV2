@@ -109,6 +109,9 @@
     .home{
         padding-bottom: 45px;
     }
+    .home .title span{
+        color: #071e48;
+    }
     .home .main-btn,
     .main-btn-hm {
         font-size: 13px;
@@ -125,7 +128,7 @@
     .home .title p {
         font-size: 14px;
         font-weight: bold;
-        color: #43a7ff;
+        color: #071e48;
         max-width: 80%;
     }
     .home .title h1 {
@@ -172,6 +175,7 @@
     
     .navbar {
         height: 80px;
+        background: rgba(0,0,0,0);
     }
     .navbar .navbar-nav {
         overflow: hidden;

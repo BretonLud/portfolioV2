@@ -238,6 +238,7 @@ p {
   transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   display: inline-flex;
+  -webkit-padding-before: 1px;
 }
 
 .navbar-toggler {

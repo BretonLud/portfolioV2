@@ -75,7 +75,6 @@ if (window.innerWidth < 960){
         routeMargin: "0px 0px",
         threshold : 0.8,
     }
-
     window.addEventListener('resize', ()=> {
         if (window.innerWidth < 960) {
             options = {

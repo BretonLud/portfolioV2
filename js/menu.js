@@ -37,13 +37,26 @@ toggleMenu();
 
 let options
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY >= 180){
-        navbar.style.backgroundColor = '#fff';
-    } else  {
-        navbar.style.backgroundColor = 'rgba(0,0,0,0)';
-    }
-})
+if (window.scrollY === 0){
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 180){
+            navbar.style.backgroundColor = '#fff';
+        } else  {
+            navbar.style.backgroundColor = 'rgba(0,0,0,0)';
+        }
+    })
+} else {
+    navbar.style.backgroundColor = '#fff';
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 180){
+            navbar.style.backgroundColor = '#fff';
+        } else  {
+            navbar.style.backgroundColor = 'rgba(0,0,0,0)';
+        }
+    })
+}
+
+
 
 if (window.innerWidth < 960){
     options = {

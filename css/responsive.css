@@ -121,7 +121,6 @@
     }
     .home .title {
         margin-top: -140px;
-        width: 75%;
     }
     .home .title p {
         font-size: 14px;
@@ -130,6 +129,7 @@
     }
     .home .title h1 {
         font-size: 47px;
+        width: 75%;
     }
     .home .title .typed-cursor, .home .title .type {
         font-size: 17px;

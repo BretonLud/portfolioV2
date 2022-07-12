@@ -41,11 +41,11 @@ if ($_GET['ajax']){
 
             $mail->CharSet = "utf-8";
 
-            $mail->addAddress("bretonludovic40@gmail.com");
+            $mail->addAddress("portfolio.bretonludovic@hotmail.fr");
 
             $mail->addReplyTo("$email");
 
-            $mail->setFrom("portfolio.bretonludovic@hotmail.fr");
+            $mail->setFrom("bretonludovic40@gmail.com");
 
             $mail->Subject = "$objet: $name";
 

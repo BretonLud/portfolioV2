@@ -36,16 +36,16 @@ if ($_GET['ajax']){
 
             $mail->isSMTP();
 
-            $mail->Host = 'localhost';
+            $mail->Host = 'smtp.free.fr';
             $mail->Port = 25;
 
             $mail->CharSet = "utf-8";
 
-            $mail->addAddress("portfolio.bretonludovic@hotmail.fr");
+            $mail->addAddress("bretonludovic40@gmail.com");
 
             $mail->addReplyTo("$email");
 
-            $mail->setFrom("bretonludovic40@gmail.com");
+            $mail->setFrom("portfolio.bretonludovic@hotmail.fr");
 
             $mail->Subject = "$objet: $name";
 

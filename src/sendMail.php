@@ -34,7 +34,7 @@ if ($_GET['ajax']){
 
             $message = wordwrap($message, 100, "\r\n");
 
-            $mail->isSMTP();
+            /*$mail->isSMTP();
 
             $mail->Host = 'smtp.free.fr';
             $mail->Port = 25;
@@ -57,10 +57,10 @@ if ($_GET['ajax']){
 
                 $tab = ['Response' => 'error', 'Message' => 'Le mail n\'a pas été envoyé'];
 
-            }
+            }*/
 
 
-            /*$to = "bretonludovic40@gmail.com"; // Change this email to your //
+            $to = "bretonludovic40@gmail.com"; // Change this email to your //
             $subject = "$objet:  $name";
             $body = "You have received a new message from your website contact form.\n\n" . "Here are the details:\n\nName: $name\n\n\nEmail: $email\n\nSubject: $objet\n\nMessage: $message";
             $header = "From: portfolio ludovic-breton". "\r\n" .
@@ -69,7 +69,7 @@ if ($_GET['ajax']){
                 $tab = ['Response' => 'success', 'Message' => 'Votre mail a été envoyé'];
             } else {
                 $tab = ['Response' => 'error', 'Message' => 'Le mail n\'a pas été envoyé'];
-            }*/
+            }
         } else {
             $tab = ['Response' => 'error', 'Message' => 'Les balises ne sont pas autorisées'];
         }

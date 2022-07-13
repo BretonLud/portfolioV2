@@ -36,7 +36,7 @@ if ($_GET['ajax']){
 
             $mail->isSMTP();
 
-            $mail->Host = 'localhost';
+            $mail->Host = 'smtp.free.fr';
             $mail->Port = 25;
 
             $mail->CharSet = "utf-8";

@@ -34,7 +34,15 @@ if ($_GET['ajax']){
 
             $message = wordwrap($message, 100, "\r\n");
 
-            $mail->isSendmail();
+            $mail->isSMTP();
+
+            $mail->Host = "ssl0.ovh.net";
+            $mail->Port = "587";
+
+            $mail->SMTPAuth = true;
+
+            $mail->Username = 'portfolio@ludovic-breton.fr';
+            $mail->Password = 'BretonMuru2211';
 
             $mail->CharSet = "utf-8";
 
@@ -58,9 +66,10 @@ if ($_GET['ajax']){
 
 
             /*$to = "bretonludovic40@gmail.com"; // Change this email to your //
+
             $subject = "$objet:  $name";
             $body = "You have received a new message from your website contact form.\n\n" . "Here are the details:\n\nName: $name\n\n\nEmail: $email\n\nSubject: $objet\n\nMessage: $message";
-            $header = "From: portfolio ludovic-breton". "\r\n" .
+            $header = "From: portfolio.bretonludovic@hotmail.fr". "\r\n" .
                 "Reply-To: $email" ;
             if(mail($to, $subject, $body, $header)) {
                 $tab = ['Response' => 'success', 'Message' => 'Votre mail a été envoyé'];

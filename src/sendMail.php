@@ -43,7 +43,7 @@ if ($_GET['ajax']){
             $mail->addAddress("bretonludovic40@gmail.com");
 
             $mail->addReplyTo("$email");
-<
+
             $mail->setFrom("portfolio.bretonludovic@hotmail.fr");
 
             $mail->Subject = "$objet: $name";

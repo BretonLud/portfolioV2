@@ -50,7 +50,7 @@ if ($_GET['ajax']){
 
             $mail->addReplyTo("$email");
 
-            $mail->setFrom("portfolio.bretonludovic@hotmail.fr");
+            $mail->setFrom("portfolio@ludovic-breton.fr");
 
             $mail->Subject = "$objet: $name";
 

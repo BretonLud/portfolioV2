@@ -36,8 +36,6 @@ if ($_GET['ajax']){
 
             $mail->isSendmail();
 
-            $mail->Host = 'localhost';
-
             $mail->CharSet = "utf-8";
 
             $mail->addAddress("bretonludovic40@gmail.com");

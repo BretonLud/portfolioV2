@@ -18,7 +18,7 @@ if ($_GET['ajax']){
     $objet = trim(stripslashes(htmlspecialchars($_GET["subject"])));
 
 
-    //$mail = new PHPMailer();
+    $mail = new PHPMailer();
 
     if (!empty($name)
 

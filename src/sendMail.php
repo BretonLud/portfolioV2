@@ -60,7 +60,7 @@ if ($_GET['ajax']){
                 $tab = ['Response' => 'success', 'Message' => 'Votre mail a été envoyé'];
             } else {
 
-                $tab = ['Response' => 'error', 'Message' => 'Le mail n\'a pas été envoyé'];
+                $tab = ['Response' => 'error', 'Message' => 'Le mail n\'a pas été envoyé' . $mail->ErrorInfo];
 
             }
 

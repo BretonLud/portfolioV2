@@ -42,7 +42,7 @@ if ($_GET['ajax']){
             $mail->SMTPAuth = true;
 
             $mail->Username = 'portfolio@ludovic-breton.fr';
-            $mail->Password = 'BretonMuru2211';
+            $mail->Password = 'FrederiqueM/08';
 
             $mail->CharSet = "utf-8";
 

@@ -8,6 +8,9 @@ use PHPMailer\PHPMailer\SMTP;
 require_once "../vendor/phpmailer/phpmailer/src/PHPMailer.php";
 require_once "../vendor/phpmailer/phpmailer/src/Exception.php";
 require_once "../vendor/phpmailer/phpmailer/src/SMTP.php";
+require_once "./login.php";
+
+$loginClass = New LoginClass();
 
 
 if ($_GET['ajax']){
@@ -41,8 +44,8 @@ if ($_GET['ajax']){
 
             $mail->SMTPAuth = true;
 
-            $mail->Username = 'portfolio@ludovic-breton.fr';
-            $mail->Password = 'FrederiqueM/08';
+            $mail->Username = $loginClass->getUsername();
+            $mail->Password = $loginClass->getPassword();
 
             $mail->CharSet = "utf-8";
 

@@ -2,9 +2,9 @@
 
 class LoginClass {
 
-    public $username = 'portfolio@ludovic-breton.fr';
+    public $username = 'mail';
 
-    public $password = "FrederiqueM/08";
+    public $password = "password";
 
     /**
      * @return string
